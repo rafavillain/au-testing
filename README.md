@@ -1,3 +1,20 @@
+# Intro
+
+Prueba
+
+# Installation
+
+1. npm install
+2. npm install -D sass
+
+# Run project
+
+npm run dev
+
+# Docs
+
+---
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
