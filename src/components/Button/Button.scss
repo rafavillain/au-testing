@@ -1,0 +1,14 @@
+.btn {
+    padding: 16px;
+    border: none;
+    color: white;
+    cursor: pointer;
+
+    &--primary {
+        background-color: blue;
+    }
+
+    &--secondary {
+        background-color: green;
+    }
+}
