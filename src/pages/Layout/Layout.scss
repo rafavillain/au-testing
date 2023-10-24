@@ -1,11 +1,20 @@
 .layout {
     display: flex;
 
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+
     &__aside {
         background: rgb(230, 230, 230);
         min-height: 100vh;
         width: 200px;
         padding: 16px;
+
+        @media screen and (max-width: 768px) {
+            min-height: 0;
+            width: 100%;
+        }
 
         li {
             margin-bottom: 8px;
@@ -14,5 +23,9 @@
 
     &__header {
         margin-bottom: 8px;
+    }
+
+    &__main {
+        margin: auto;
     }
 }

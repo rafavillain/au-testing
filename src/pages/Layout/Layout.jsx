@@ -35,7 +35,7 @@ export default function Layout() {
                     </nav>
                 </aside>
 
-            <main>
+            <main className="layout__main">
                 <Outlet />
             </main>
         </div>
