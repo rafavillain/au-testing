@@ -1,15 +1,17 @@
 import "./App.scss"
 
+import Heading from "./components/Heading/Heading"
 import Paragraph from "./components/Paragraph/Paragraph"
 import Picture from "./components/Picture/Picture"
 import Button from "./components/Button/Button"
 
 export default function App() {
     return (
-        <div className="app">
+        <div className="uikit">
+            <Heading type="h1" text="UI Kit" />
 
-            <div className="colors">
-                <h2>Colores</h2>
+            <div className="uikit__item colors">
+                <Heading type="h2" className="uikit__title" text="Colores" />
 
                 <ul>
                     <li className="colors__primary">$c-primary</li>
@@ -19,12 +21,35 @@ export default function App() {
                 </ul>
             </div>
 
-            <Paragraph className="m-test__p" text="Párrafo lorem ipsum dolor amet" />
+            <div className="uikit__item">
+                <Heading type="h2" className="uikit__title" text="Headings" />
 
-            <Picture src_mobile="//unsplash.it/768/600" src_desktop="//unsplash.it/1200/600" alt="" />
+                <Heading type="h1" text="H1 heading" />
+                <Heading type="h2" text="H2 heading" />
+                <Heading type="h3" text="H3 heading" />
+                <Heading type="h4" text="H4 heading" />
+                <Heading type="h5" text="H5 heading" />
+                <Heading type="h6" text="H6 heading" />
+            </div>
 
-            <Button className="btn--primary" text="Botón primario" />
-            <Button className="btn--secondary" text="Botón secundario" />
+            <div className="uikit__item">
+                <Heading type="h2" className="uikit__title" text="Párrafos" />
+
+                <Paragraph className="m-test__p" text="Párrafo lorem ipsum dolor amet" />
+            </div>
+
+            <div className="uikit__item">
+                <Heading type="h2" className="uikit__title" text="Imágenes" />
+
+                <Picture src_mobile="//unsplash.it/768/600" src_desktop="//unsplash.it/1200/600" alt="" height="600px" width="1200px" />
+            </div>
+
+            <div className="uikit__item">
+                <Heading type="h2" className="uikit__title" text="Botones" />
+
+                <Button className="btn--primary" text="Botón primario" />
+                <Button className="btn--secondary" text="Botón secundario" />
+            </div>
         </div>
     );
 }
