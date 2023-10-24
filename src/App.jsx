@@ -1,7 +1,7 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom"
-import Layout from "./Layout";
-import Uikit from "./Uikit"
-import Home from "./Home"
+import Layout from "./pages/Layout/Layout";
+import Uikit from "./pages/Uikit/Uikit"
+import Home from "./pages/Home/Home"
 
 import "./App.scss"
 

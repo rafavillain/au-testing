@@ -1,9 +1,9 @@
 import "./Uikit.scss"
 
-import Heading from "./components/Heading/Heading"
-import Paragraph from "./components/Paragraph/Paragraph"
-import Picture from "./components/Picture/Picture"
-import Button from "./components/Button/Button"
+import Heading from "../../components/Heading/Heading"
+import Paragraph from "../../components/Paragraph/Paragraph"
+import Picture from "../../components/Picture/Picture"
+import Button from "../../components/Button/Button"
 
 function Uikit() {
     return (
