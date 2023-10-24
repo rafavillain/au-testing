@@ -1,28 +1,29 @@
+@import "../../../src/App.scss";
+
 .layout {
     display: flex;
+    flex-direction: column;
 
-    @media screen and (max-width: 768px) {
-        flex-direction: column;
+    @include tablet {
+        flex-direction: row;
     }
 
     &__aside {
         background: rgb(230, 230, 230);
-        min-height: 100vh;
-        width: 200px;
-        padding: 16px;
+        padding: rem(16);
 
-        @media screen and (max-width: 768px) {
-            min-height: 0;
-            width: 100%;
+        @include tablet {
+            min-height: 100vh;
+            width: rem(200);
         }
 
         li {
-            margin-bottom: 8px;
+            margin-bottom: rem(8);
         }
     }
 
     &__header {
-        margin-bottom: 8px;
+        margin-bottom: rem(8);
     }
 
     &__main {

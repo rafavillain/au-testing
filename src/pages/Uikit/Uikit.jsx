@@ -41,7 +41,7 @@ function Uikit() {
             <div className="uikit__item">
                 <Heading type="h2" className="uikit__title" text="Imágenes" />
 
-                <Picture src_mobile="//unsplash.it/768/600" src_desktop="//unsplash.it/1200/600" alt="" height="600px"
+                <Picture className="uikit__img" src_mobile="//unsplash.it/768/600" src_desktop="//unsplash.it/1200/600" alt="" height="600px"
                     width="1200px" />
             </div>
 
